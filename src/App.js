@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Transaction from "./components/Transaction";
+import FormComponent from "./components/FormComponent";
+const Title = () => <h1>โปรแกรมบัญชีรายรับ-รายจ่าย</h1>
+const Description = () => <p>บันทึกข้อมูลบัญชีในแต่ละวัน</p>;
+
+
+
+// const Transaction = () => {
+//   return (
+//     <ul>
+//       <Item />
+//       <li>เงินเดือน<span>+20,000</span></li>
+//       <li>เงินค่าอาหาร<span>-500</span></li>
+//     </ul>
+//   );
+// }
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Title />
+      <Description />
+      <FormComponent />
+      <Transaction />
     </div>
   );
 }
